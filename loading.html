@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<main class="wrapper" role="main">
+    <h1>注册新账号</h1>
+<form method="post">
+    <!-- 创建一个新表单 -->
+    <fieldset>
+        <h2 class="hdr-account">Account</h2>
+
+        <div class="fields">
+            <p class="row">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" class="field-large">
+            </p>
+            <p class="row">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" class="field-large">
+            </p>
+            <p class="row">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" class="field-large">
+            </p>
+            <p class="row">
+                <label for="password1">Password:</label>
+                <input type="password" id="password1" name="password_01" class="field-large">
+            </p>
+            <p class="row">
+                <label for="password2">Re-enter Password:</label>
+                <input type="password" id="password2" name="password_02" class="field-large">
+            </p>
+
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2 class="hdr-address">Address</h2>
+        <div class="fields">
+            <div class="row">
+                <label for="state">State:</label>
+                <select id="state" class="field-large">
+                    <option>广东省</option>
+                    <option>湖南省</option>
+                    <option>湖北省</option>
+                    <option>河南省</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="street-address">Street Address</label>
+                <input type="text" id="street-address" class="field-large">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2 class="hdr-public">Public</h2>
+        <div class="fields">
+            <div class="row">
+                <label for="PY-id">ID:</label>
+                <input type="text" id="PY-id" class="field-large">
+            </div>
+            <div class="row">
+                <label>Birth Date:</label>
+                <select class="field-large">
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                </select>
+                <p>年</p>
+                <select class="field-large">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                </select>
+                <p>月</p>
+                <select class="field-large">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                </select>
+                <p>日</p>
+            </div>
+        </div>
+    </fieldset>
+    <input type="submit" value="创建账户" class="btn">
+    <input type="submit" value="重置" class="btn">
+</form>
+</main>
+</body>
+</html>
